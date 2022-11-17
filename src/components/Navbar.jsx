@@ -1,10 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import styles from '../style'
 
 const Navbar = () => {
+
   return (
     <nav className={`z-100`}>
-       <div className="pt-5">
+       <div className="">
+       <a href='#hero'>
+            <button className="heroBtn">Home</button>
+          </a>
           <a href='#about'>
             <button className="heroBtn">About</button>
           </a>

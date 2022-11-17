@@ -1,11 +1,11 @@
 import React from "react";
 import styles, { layout } from "../style";
 import { motion } from "framer-motion";
+import projects from "../assets/api/projects";
 
 import myImg from "../assets/images/DSCF6458.JPG";
 
 const Projects = () => {
-  const projects = [1, 2, 3, 4, 5];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,7 +15,7 @@ const Projects = () => {
     >
       <h3 className={`${styles.heading1}`}>Projects</h3>
 
-      <div className="relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
+      <div className="relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         {projects.map((project, i) => (
           <div
             key={i}
@@ -25,34 +25,26 @@ const Projects = () => {
               initial={{ y: -300, opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
-              viewport={{once:true}}
+              viewport={{ once: true }}
               src=""
               alt="Image"
               className="object-cover"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#f7ab0a]/50">
-                  {" "}
-                  Case Study {i + 1} of {projects.length}:
-                </span>{" "}
-                Slack clone
+                {project.name}
               </h4>
               <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-                et debitis laboriosam eveniet amet ad, quod modi fugit
-                cupiditate sed distinctio maxime non ab unde reiciendis cumque
-                quos doloremque eius praesentium dolore tempora molestias
-                dolorem fugiat veniam. Libero dicta nostrum aspernatur assumenda
-                corrupti at? Doloribus reiciendis tenetur quia, vel minus
-                nesciunt inventore quod sit natus assumenda nostrum recusandae
-                facilis aut perferendis saepe. Blanditiis aperiam ipsum maxime
-                ullam mollitia. Eveniet tempore sequi nobis fugit quas quasi
-                voluptatem quod iusto et aspernatur, debitis ipsam ipsum autem
-                blanditiis assumenda, delectus officia id repudiandae non
-                nesciunt eius provident. Dolorem perspiciatis itaque doloribus a
-                reiciendis?
+                {project.description}
               </p>
+            </div>
+            <div className="">
+              <button className="mainBtn">
+                <a href={project.github}>Github project</a>
+              </button>
+              <button className="mainBtn">
+                <a href={project.live}>Live version</a>
+              </button>
             </div>
           </div>
         ))}

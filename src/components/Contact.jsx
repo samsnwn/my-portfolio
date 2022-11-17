@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import styles, { layout } from "../style";
+import { motion } from "framer-motion";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 const Contact = () => {
-
   const {
     register,
     handleSubmit,
@@ -17,7 +17,12 @@ const Contact = () => {
   };
 
   return (
-    <div className={`${layout.section} max-w-7xl`}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className={`${layout.section} max-w-7xl`}
+    >
       <h3 className={`${styles.heading1}`}>Contact</h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
@@ -84,7 +89,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

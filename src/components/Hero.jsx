@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import Navbar from "./Navbar";
 import myImg from '../assets/images/DSCF6458.JPG'
 import styles from '../style'
 
 
+
 const Hero = () => {
+
   const [text, count] = useTypewriter({
     words: [
       'const name = "Samuel C. Glantz"',
@@ -31,8 +32,6 @@ const Hero = () => {
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="var(--main-color)" />
         </h1>
-
-       <Navbar/>
       </div>
     </div>
   );
