@@ -13,6 +13,11 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+
+    textColor500: "text-gray-500",
+    textColor300: "text-gray-300",
+    textColor400: "text-gray-400",
+
   };
   
   export const layout = {

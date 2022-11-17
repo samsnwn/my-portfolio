@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div>
       <Home/>
-      <main>
+ 
         {/* <Header />
 
         <section id="hero">
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes> */}
-      </main>
+
     </div>
   );
 };
