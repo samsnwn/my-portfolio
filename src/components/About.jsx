@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import myImg from "../assets/images/DSCF6458.JPG";
-import styles from "../style";
+import styles, {layout} from "../style";
 
 const About = () => {
   return (
@@ -10,10 +10,10 @@ const About = () => {
     whileInView={{ x:0, opacity: 1 }}
     transition={{ duration: 1.2 }}
     view={{ once: true }}
-    className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+    className={`${layout.section}`}
     >
       <h3
-        className={`absolute top-24 uppercase tracking-[20px] ${styles.textColor500} text-2xl`}
+        className={`${styles.heading1}`}
       >
         About
       </h3>

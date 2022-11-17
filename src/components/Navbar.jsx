@@ -1,23 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styles from '../style'
 
 const Navbar = () => {
   return (
     <nav className={`z-100`}>
        <div className="pt-5">
-          <NavLink to='#about'>
+          <a href='#about'>
             <button className="heroBtn">About</button>
-          </NavLink>
-          <NavLink to='#experience'>
-            <button className="heroBtn">Experience</button>
-          </NavLink>
-          <NavLink to='#skills'>
-            <button className="heroBtn">Skills</button>
-          </NavLink>
-          <NavLink to='#projects'>
+          </a>
+          <a href='#projects'>
             <button className="heroBtn">Projects</button>
-          </NavLink>
+          </a>
+          <a href='#skills'>
+            <button className="heroBtn">Skills</button>
+          </a>
+          <a href='#contact'>
+            <button className="heroBtn">Contact</button>
+          </a>
         </div>
     </nav>
   );
