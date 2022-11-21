@@ -21,9 +21,9 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className={`${layout.section} max-w-7xl`}
+      className={`h-screen flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center max-w-7xl`}
     >
-      <h3 className={`${styles.heading1}`}>Contact</h3>
+      <h3 className={`absolute top-20 uppercase tracking-[20px] ${styles.textColor500} text-2xl`}>Contact</h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           I have exactly what you need.{" "}

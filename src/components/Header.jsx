@@ -6,6 +6,7 @@ import Hamburger from "hamburger-react";
 import { Context } from "../store/Context";
 import NavBar from "./Navbar/NavBar";
 import MobileNavBar from "./Navbar/MobileNavBar";
+import { FaDownload } from "react-icons/fa";
 
 const Header = () => {
   const [fix, setFix] = useState(false);
@@ -45,20 +46,20 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <SocialIcon
-            className="cursor-pointer"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <p
-            className={`uppercase hidden md:inline-flex text-sm ${styles.textColor400}`}
-          >
-            Download my CV
-          </p>
-        </motion.div >
-        <motion.div  initial={{ x: 500, opacity: 0, scale: 0.5 }}
+          <div className="flex items-center ml-3 cursor-pointer" onClick={{}}>
+            <FaDownload className={`text-[#808080] mr-2 text-lg bg-transparent`} />
+            <p
+              className={`uppercase hidden md:inline-flex text-sm ${styles.textColor400}`}
+            >
+              Download my CV
+            </p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.7 }}>
+          transition={{ duration: 1.7 }}
+        >
           <MobileNavBar />
         </motion.div>
       </header>
