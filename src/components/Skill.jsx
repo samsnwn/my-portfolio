@@ -7,7 +7,7 @@ const Skill = () => {
   return (
     <div className="group relative flex cursor-pointer">
       {skills.map((skill, i) => (
-        <div></div>
+        <div key={i}></div>
       ))}
       <motion.div
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}

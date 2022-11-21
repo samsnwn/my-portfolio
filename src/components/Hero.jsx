@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import myImg from '../assets/images/DSCF6458.JPG'
 import styles from '../style'
+import { motion } from "framer-motion";
+import NavBar from "./Navbar/NavBar";
+
 
 
 
@@ -10,12 +13,12 @@ const Hero = () => {
 
   const [text, count] = useTypewriter({
     words: [
-      'const name = "Samuel C. Glantz"',
-      "let job = Full Stack Web Developer",
+      "Samuel C. Glantz",
     ],
-    loop: true,
-    delaySpeed: 2000,
+    loop: false,
+    delaySpeed: 3000,
   });
+  
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -24,7 +27,7 @@ const Hero = () => {
         alt="My picture"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
-      <div className="z-20">
+      <div className="z-10">
         <h2 className={`text-sm uppercase ${styles.textColor500} pb-2 tracking-[15px]`}>
           Full Stack Web Developer
         </h2>
@@ -33,6 +36,15 @@ const Hero = () => {
           <Cursor cursorColor="var(--main-color)" />
         </h1>
       </div>
+      <motion.div
+        initial={{ y: -500, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+        id='navbar'
+        className={`z-50 overflow-hidden`}
+      >
+        <NavBar/>
+      </motion.div>
     </div>
   );
 };

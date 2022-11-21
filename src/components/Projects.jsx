@@ -3,17 +3,15 @@ import styles, { layout } from "../style";
 import { motion } from "framer-motion";
 import projects from "../assets/api/projects";
 
-import myImg from "../assets/images/DSCF6458.JPG";
-
 const Projects = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className={`${layout.section} max-w-full overflow-hidden`}
+      className={`h-screen flex flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center max-w-full overflow-hidden`}
     >
-      <h3 className={`${styles.heading1}`}>Projects</h3>
+      <h3 className={`absolute top-20 uppercase tracking-[20px] ${styles.textColor500} text-2xl xl:top-10`}>Projects</h3>
 
       <div className="relative w-full flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         {projects.map((project, i) => (
@@ -26,9 +24,9 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              src=""
+              src={project.image}
               alt="Image"
-              className="object-cover"
+              className="object-cover max-w-[90%] xs:max-w-[100%] md:max-w-[70%] lg:max-w-[50%] mt-[10rem] mb-10 xl:max-w-[40%] lg:mt-[3rem]"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
@@ -38,7 +36,7 @@ const Projects = () => {
                 {project.description}
               </p>
             </div>
-            <div className="">
+            <div className="flex gap-10">
               <button className="mainBtn">
                 <a href={project.github}>Github project</a>
               </button>
