@@ -14,7 +14,7 @@ const Skills = () => {
       <h3  className={`absolute top-20 uppercase tracking-[20px] ${styles.textColor500} text-2xl`}>Skills</h3>
 
       <h3 className={`absolute uppercase px-10 top-36 tracking-[3px]`}>
-        Hover hover a skill fur current proficiency
+        Hover a skill for current proficiency
       </h3>
       <div className="grid grid-cols-4 gap-2 md:gap-5 mt-20">
         <Skill />
