@@ -27,7 +27,7 @@ const Hero = () => {
       <img
         src={myImg}
         alt="My picture"
-        className="relative bottom-5 md:bottom-0 rounded-full h-32 w-32 top-2 mx-auto object-cover"
+        className="relative rounded-full h-32 w-32 top-2 mx-auto object-cover"
       />
       <div className="z-10">
         <h2 className={`text-sm uppercase ${styles.textColor500} pb-2 tracking-[15px]`}>
