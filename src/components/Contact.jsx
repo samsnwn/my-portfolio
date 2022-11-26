@@ -21,7 +21,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className={`h-screen flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center max-w-7xl`}
+      className={`h-[115vh] min-[500px]:h-screen flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center max-w-7xl`}
     >
       <h3 className={`absolute top-20 uppercase tracking-[20px] ${styles.textColor500} text-xl`}>Contact</h3>
       <div className="flex flex-col space-y-9 px-5 mt-28">
