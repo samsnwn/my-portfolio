@@ -14,10 +14,12 @@ const Hero = () => {
   const [text, count] = useTypewriter({
     words: [
       "Samuel C. Glantz",
+      "samsnwn"
     ],
     loop: false,
     delaySpeed: 3000,
   });
+
   
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
@@ -25,14 +27,14 @@ const Hero = () => {
       <img
         src={myImg}
         alt="My picture"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="relative rounded-full h-32 w-32 top-2 mx-auto object-cover"
       />
       <div className="z-10">
         <h2 className={`text-sm uppercase ${styles.textColor500} pb-2 tracking-[15px]`}>
           Full Stack Web Developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
+        <h1 className="text-3xl min-[600px]:text-5xl lg:text-6xl font-semibold px-10">
+          <span className="mr-2">{text}</span>
           <Cursor cursorColor="var(--main-color)" />
         </h1>
       </div>

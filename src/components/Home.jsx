@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import { Routes, Route } from "react-router-dom";
-import { Context } from "../store/Context";
+import React from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Header from "./Header";
@@ -9,15 +7,14 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import {TbArrowBigUpLines} from 'react-icons/tb'
 import { motion } from "framer-motion";
+import Footer from "./Footer";
 
 
 const Home = () => {
-  const { desktop, setDesktop } = useContext(Context);
 
   return (
     <>
-
-        <div className="bg-discount-gradient text-white h-screen overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
+        <div className="home bg-discount-gradient text-white h-screen overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 relative">
           <Header/>
           <main className="">
             <section id="hero" className="items-center">
@@ -38,6 +35,9 @@ const Home = () => {
 
             <section id="contact" className="snap-start">
               <Contact />
+            </section>
+            <section>
+              <Footer/>
             </section>
           </main>
           <a href="#hero">

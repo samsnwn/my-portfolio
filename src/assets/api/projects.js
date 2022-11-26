@@ -15,6 +15,13 @@ const projects = [
     live: "https://lazydevs.onrender.com",
   },
   {
+    name: "E-commerce shop",
+    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
+    image: kanban,
+    github: "https://github.com/samsnwn/E-commerce-project",
+    live: "https://github.com/samsnwn/E-commerce-project",
+  },
+  {
     name: "Facelack",
     description:
       "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
@@ -23,18 +30,18 @@ const projects = [
     live: "https://facelack.vercel.app/",
   },
   {
-    name: "Drum Machine",
-    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
-    image: drumMachine,
-    github: "https://github.com/samsnwn/drum-machine",
-    live: "https://github.com/samsnwn/drum-machine",
-  },
-  {
     name: "Project Management Tool",
     description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
     image: kanban,
     github: "https://github.com/samsnwn/project-management-tool",
     live: "https://github.com/samsnwn/project-management-tool",
+  },
+  {
+    name: "Drum Machine",
+    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
+    image: drumMachine,
+    github: "https://github.com/samsnwn/drum-machine",
+    live: "https://github.com/samsnwn/drum-machine",
   }
 ];
 
