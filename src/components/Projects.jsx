@@ -9,7 +9,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className={`h-screen flex flex-col relative text-center md:text-left md:flex-row px-5 md:px-10 justify-evenly mx-auto items-center max-w-full overflow-hidden`}
+      className={`h-[120vh] flex flex-col relative bottom-5 text-center md:text-left md:flex-row px-5 md:px-10 justify-evenly mx-auto items-center max-w-full overflow-hidden`}
     >
       <h3 className={`absolute bottom-[82%] uppercase tracking-[15px] md:tracking-[20px] ${styles.textColor500} text-2xl xl:top-20`}>Projects</h3>
 
@@ -26,7 +26,7 @@ const Projects = () => {
               viewport={{ once: true }}
               src={project.image}
               alt="Image"
-              className="object-cover max-w-[90%] md:max-w-[70%] lg:max-w-[50%] mt-40 md:mt-[10rem] mb-5 md:mb-10 xl:max-w-[40%] lg:mt-[3rem]"
+              className="project-image object-cover max-w-[90%] md:max-w-[70%] lg:max-w-[50%] mt-40 md:mt-[10rem] mb-5 md:mb-10 xl:max-w-[40%] lg:mt-[3rem]"
             />
             <motion.div  initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
