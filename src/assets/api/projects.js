@@ -36,14 +36,14 @@ const projects = [
     description: "Project Management tool for personal use with drag and drop functionality",
     image: kanban,
     github: "https://github.com/samsnwn/project-management-tool",
-    live: "",
+    live: "https://github.com/samsnwn/project-management-tool",
   },
   {
     name: "Drum Machine",
     description: "Virtual drum machine with 2 different sound banks and volume control. Can be played with mouse or with the keyboard. Future implementation: Step sequencer to draw drum patterns",
     image: drumMachine,
     github: "https://github.com/samsnwn/drum-machine",
-    live: "",
+    live: "https://samsdrummachine.vercel.app/",
   }
 ];
 
