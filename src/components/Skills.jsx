@@ -2,6 +2,7 @@ import React from "react";
 import styles, { layout } from "../style";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import skillsType from '../assets/api/skillsCircle'
 
 const Skills = () => {
   return (
@@ -17,22 +18,9 @@ const Skills = () => {
         Hover a skill for current proficiency
       </h3>
       <div className="grid grid-cols-4 gap-2 md:gap-5 mt-20">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
+      {skillsType.map((skill, i) => {
+        return <Skill key={i} name={skill.name} level={skill.level} image={skill.img} directionLeft={skill.directionLeft}/>
+      })}
       </div>
     </motion.div>
   );
