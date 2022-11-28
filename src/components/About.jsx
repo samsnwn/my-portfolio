@@ -32,10 +32,21 @@ const About = () => {
           <span className="underline decoration-[var(--main-color)]">
             little
           </span>{" "}
-          background
+          about myself
         </h4>
         <p className="max-[346px]:text-sm max-[346px]:mt-5">
-        My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish.
+          After the recent completion of my studies as Full Stack Web Developer,
+          my next challenge is to begin an intership that provides me the tools
+          to continue growing as a developer, giving me as well the chance to
+          share my skills and knowledge with a team, gaining experience and
+          achieving desired results. I have developed over the year a strong
+          passion in creating web applications with the best possible user
+          experience, as well as ensuring best security practices, improving one
+          day at a time using different technologies and methods, as well as
+          working as a team in big projects with specific tasks for each member.
+          My goal is to deliver enterprise-level digital products, providing
+          solution-orientated approaches, as well a customer-level applications,
+          making daily tasks easier to accomplish.
         </p>
       </div>
     </motion.div>

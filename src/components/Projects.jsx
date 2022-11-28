@@ -40,10 +40,10 @@ const Projects = () => {
             </motion.div>
             <div className="flex gap-5 md:gap-10 flex-col min-[600px]:flex-row">
               <button className="mainBtn">
-                <a href={project.github}>Github project</a>
+                <a href={project.github} target="_blank">Github project</a>
               </button>
               <button className="mainBtn">
-                <a href={project.live}>Live version</a>
+                <a href={project.live} target="_blank">Live version</a>
               </button>
             </div>
           </div>

@@ -29,7 +29,7 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <a download href="../assets/cv/Samuel Castillo Glantz_Resume.pdf">
+          {/* <a download href="../assets/cv/Samuel Castillo Glantz_Resume.pdf">
             <div className="flex items-center ml-3 cursor-pointer">
               <FaDownload
                 className={`text-[#808080] mr-2 text-lg bg-transparent`}
@@ -40,7 +40,7 @@ const Header = () => {
                 Download my CV
               </p>
             </div>
-          </a>
+          </a> */}
         </motion.div>
         <motion.div
           initial={{ x: 500, opacity: 0, scale: 0.5 }}
