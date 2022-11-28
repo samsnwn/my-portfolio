@@ -8,16 +8,6 @@ const MobileNavBar = () => {
   const [open, setOpen] = useState(false);
   const closeMobileMenu = () => setOpen(false);
 
-  // useEffect(() => {
-  //   const html = document.querySelector("main");
-  //   if (open) {
-  //     html.style.position = open ? "hidden" : "absolute";
-  //     // html.style.top = open ? "0" : "";
-
-  //   } else  {
-  //   }
-  // }, [open]); // condition to watch to perform side effect
-
   return (
     <nav className="mobile-nav">
       {open && (

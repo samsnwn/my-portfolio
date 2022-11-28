@@ -2,6 +2,8 @@ import lazyDevs from '../images/lazydevs.jpg'
 import facelack from '../images/facelack.jpg'
 import drumMachine from '../images/drum-machine.jpg'
 import kanban from '../images/kanban.jpg'
+import shop from '../images/shop.jpg'
+
 
 
 
@@ -16,8 +18,8 @@ const projects = [
   },
   {
     name: "E-commerce shop",
-    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
-    image: kanban,
+    description: "Dummy E-commerce application with all functionalities implemented for future real online shop. Soon to be deployed. Technologies used: React, Tailwind, NodeJS, Express, MongoDB",
+    image: shop,
     github: "https://github.com/samsnwn/E-commerce-project",
     live: "https://github.com/samsnwn/E-commerce-project",
   },
@@ -31,17 +33,17 @@ const projects = [
   },
   {
     name: "Project Management Tool",
-    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
+    description: "Project Management tool for personal use with drag and drop functionality",
     image: kanban,
     github: "https://github.com/samsnwn/project-management-tool",
-    live: "https://github.com/samsnwn/project-management-tool",
+    live: "",
   },
   {
     name: "Drum Machine",
-    description: "Creating a Slack clone with personalized functionalties to put into practice all the skills adquired for Front-End. Technologies used: React, Context API, Styled Components, Firebase",
+    description: "Virtual drum machine with 2 different sound banks and volume control. Can be played with mouse or with the keyboard. Future implementation: Step sequencer to draw drum patterns",
     image: drumMachine,
     github: "https://github.com/samsnwn/drum-machine",
-    live: "https://github.com/samsnwn/drum-machine",
+    live: "",
   }
 ];
 

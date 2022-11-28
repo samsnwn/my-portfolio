@@ -34,7 +34,7 @@ const About = () => {
           </span>{" "}
           background
         </h4>
-        <p className="max-[346px]:text-sm">
+        <p className="max-[346px]:text-sm max-[346px]:mt-5">
         My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish. My goal is to deliver enterprise-level digital products, providing solution-orientated approaches, as well a customer-level applications, making daily tasks easier to accomplish.
         </p>
       </div>
