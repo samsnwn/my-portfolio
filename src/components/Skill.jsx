@@ -15,7 +15,7 @@ const Skill = ({name, level, image, directionLeft}) => {
        min-[500px]:w-28 min-[500px]:h-28 xl:h-32 xl:w-32 z-0">
         <div className="flex flex-col items-center justify-center h-full">
           <p className="text-lg md:text-3xl font-bold text-black opacity-100">{level}</p>
-          <p className='text-black font-bold'>{name}</p>
+          <p className='text-black font-bold max-[600px]:text-xs md:text-base'>{name}</p>
         </div>
       </div>
     </div>
