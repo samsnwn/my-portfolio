@@ -12,6 +12,8 @@ import express from '../png/express.png'
 import typescript from '../png/type.png'
 import next from '../png/next.svg'
 import pass from '../png/pass.svg'
+import framer from '../png/framer.png'
+
 
 
 const skillsType = [
@@ -97,6 +99,12 @@ const skillsType = [
         name: 'Passport JS',
         img:pass,
         level: '40%',
+        directionLeft: false
+    },
+    {
+        name: 'Framer-motion',
+        img:framer,
+        level: '50%',
         directionLeft: false
     },
 
