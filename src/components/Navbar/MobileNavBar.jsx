@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Spin as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
 import MobileLinks from "./MobileLinks";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import {Context} from '../../store/Context'
 
 const MobileNavBar = () => {
-  const [open, setOpen] = useState(false);
+
+  const {open, setOpen} =useContext(Context)
+
   const closeMobileMenu = () => setOpen(false);
+
+
 
   return (
     <nav className="mobile-nav">

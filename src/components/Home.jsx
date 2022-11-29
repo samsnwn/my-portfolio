@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Header from "./Header";
@@ -8,13 +8,16 @@ import Skills from "./Skills";
 import {TbArrowBigUpLines} from 'react-icons/tb'
 import { motion } from "framer-motion";
 import Footer from "./Footer";
+import { Context } from "../store/Context";
 
 
 const Home = () => {
 
+  const {open} = useContext(Context)
+
   return (
     <>
-        <div className="home bg-discount-gradient text-white h-screen overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 relative">
+        <div className={`home bg-discount-gradient text-white h-screen overflow-x-hidden ${open && 'overflow-y-hidden'}  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 relative`}>
           <Header/>
           <main className="">
             <section id="hero" className="items-center">
