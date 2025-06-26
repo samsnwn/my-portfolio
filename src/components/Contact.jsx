@@ -13,7 +13,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (formData) => {
-    window.location.href = `mailto:samuel.c.glantz@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}, ${formData.message}. Contact me at ${formData.email}`;
+    window.location.href = `mailto:samuel.c.glantz@gmail.com?subject=${formData.subject}&body=${formData.message}`;
   };
 
   return (
@@ -23,12 +23,12 @@ const Contact = () => {
       transition={{ duration: 1.5 }}
       className={`h-[115vh] min-[500px]:h-screen flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center max-w-7xl`}
     >
-      <h3 className={`absolute top-20 uppercase tracking-[20px] ${styles.textColor500} text-xl`}>Contact</h3>
-      <div className="flex flex-col space-y-9 px-5 mt-28">
-        <h4 className="text-2xl md:text-3xl font-semibold text-center">
+      <h3 className={`absolute top-36 uppercase tracking-[20px] ${styles.textColor500} text-xl`}>Contact</h3>
+      <div className="flex flex-col space-y-9 px-5">
+        {/* <h4 className="text-2xl md:text-3xl font-semibold text-center">
           I have  what you need.{" "}
           <span className="decoration-[#f7ab0a]/50 underline">Let's talk!</span>
-        </h4>
+        </h4> */}
 
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form
+        {/* <form
           className="flex flex-col space-y-2 mx-auto"
           onSubmit={handleSubmit(onSubmit)}
         >
@@ -72,14 +72,13 @@ const Contact = () => {
             type="text"
           />
 
-          <textarea
+          <input
             {...register("message")}
             placeholder="Message"
             className="contact-info"
+            type="text"
             name=""
             id=""
-            cols="30"
-            rows="5"
           />
           <button
             type="submit"
@@ -87,7 +86,7 @@ const Contact = () => {
           >
             Submit
           </button>
-        </form>
+        </form> */}
       </div>
     </motion.div>
   );

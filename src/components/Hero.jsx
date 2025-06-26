@@ -7,23 +7,22 @@ import { motion } from "framer-motion";
 import NavBar from "./Navbar/NavBar";
 
 
-
-
 const Hero = () => {
 
-  const [text, count] = useTypewriter({
-    words: [
-      "Samuel C. Glantz",
-      "samsnwn"
-    ],
-    loop: false,
-    delaySpeed: 3000,
-  });
+  // const [text, count] = useTypewriter({
+  //   words: [
+  //     "Samuel C. Glantz",
+  //     "samsnwn"
+  //   ],
+  //   loop: false,
+  //   delaySpeed: 3000,
+  // });
 
   
   return (
-    <div className="h-[75vh] min-[600px]:h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
+    <div className="h-[75vh] flex flex-col items-center justify-center text-center overflow-hidden">
+      <h1 className="text-4xl font-bold">Coming soon...</h1>
+      {/* <BackgroundCircles />
       <img
         src={myImg}
         alt="My picture"
@@ -46,7 +45,7 @@ const Hero = () => {
         className={`z-50 overflow-hidden`}
       >
         <NavBar/>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

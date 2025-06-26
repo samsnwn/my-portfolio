@@ -24,7 +24,7 @@ const Home = () => {
               <Hero />
             </section>
 
-            <section id="about" className="snap-start items-center">
+            {/* <section id="about" className="snap-start items-center">
               <About />
             </section>
 
@@ -34,22 +34,22 @@ const Home = () => {
 
             <section id="skills" className="snap-center">
               <Skills />
-            </section>
+            </section> */}
 
-            <section id="contact" className="snap-start">
+            {/* <section id="contact" className="snap-start">
               <Contact />
-            </section>
-            <section>
+            </section> */}
+            {/* <section>
               <Footer/>
-            </section>
+            </section> */}
           </main>
-          <a href="#hero">
+          {/* <a href="#hero">
             <footer className="sticky bottom-5 w-full cursor-pointer z-[6000]">
               <motion.div className="flex items-center justify-center" >
                 <TbArrowBigUpLines className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer text-[#808080]"/>
               </motion.div>
             </footer>
-          </a>
+          </a> */}
         </div>
     </>
   );
